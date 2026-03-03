@@ -26,21 +26,6 @@ Each service runs on port `8080` internally and uses PostgreSQL via environment 
 - Docker
 - Docker Compose
 
-## Quick Start
-
-1. Create a `.env` file in the repository root (you can copy `.env.example`).
-2. Add the required database environment variables:
-
-```env
-POSTGRES_HOST=postgres
-POSTGRES_PORT=5432
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-ITEM_DB=itemdb
-ORDER_DB=orderdb
-PAYMENT_DB=paymentdb
-```
-
 3. Start the stack:
 
 ```bash
@@ -51,7 +36,6 @@ docker compose up --build
 
 ## Example Endpoints
 
-- `GET /health`
 - `GET /items`
 - `POST /items`
 - `GET /orders`
